@@ -32,7 +32,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         man-db \
         less
 
-ENV MRAN_BUILD_DATE=2021-04-10
+ENV MRAN_BUILD_DATE=2021-10-01
 
 # Install Basic Utility R Packages
 RUN install2.r -r https://cran.microsoft.com/snapshot/${MRAN_BUILD_DATE} \
