@@ -1,0 +1,435 @@
+{
+  "R": {
+    "Version": "4.1.1",
+    "Repositories": [
+      {
+        "Name": "RSPM",
+        "URL": "https://packagemanager.rstudio.com/all/latest"
+      }
+    ]
+  },
+  "Packages": {
+    "Cubist": {
+      "Package": "Cubist",
+      "Version": "0.3.0",
+      "Source": "Repository"
+    },
+    "DBI": {
+      "Package": "DBI",
+      "Version": "1.1.1",
+      "Source": "Repository"
+    },
+    "DataExplorer": {
+      "Package": "DataExplorer",
+      "Version": "0.8.2",
+      "Source": "Repository"
+    },
+    "RCurl": {
+      "Package": "RCurl",
+      "Version": "1.98-1.5",
+      "Source": "Repository"
+    },
+    "RPostgres": {
+      "Package": "RPostgres",
+      "Version": "1.4.1",
+      "Source": "Repository"
+    },
+    "RcppParallel": {
+      "Package": "RcppParallel",
+      "Version": "5.1.4",
+      "Source": "Repository"
+    },
+    "Rtsne": {
+      "Package": "Rtsne",
+      "Version": "0.15",
+      "Source": "Repository"
+    },
+    "anomalize": {
+      "Package": "anomalize",
+      "Version": "0.2.2",
+      "Source": "Repository"
+    },
+    "assertive": {
+      "Package": "assertive",
+      "Version": "0.3-6",
+      "Source": "Repository"
+    },
+    "assertr": {
+      "Package": "assertr",
+      "Version": "2.8",
+      "Source": "Repository"
+    },
+    "astsa": {
+      "Package": "astsa",
+      "Version": "1.14",
+      "Source": "Repository"
+    },
+    "aws.s3": {
+      "Package": "aws.s3",
+      "Version": "0.3.21",
+      "Source": "Repository"
+    },
+    "billboarder": {
+      "Package": "billboarder",
+      "Version": "0.3.1",
+      "Source": "Repository"
+    },
+    "bit64": {
+      "Package": "bit64",
+      "Version": "4.0.5",
+      "Source": "Repository"
+    },
+    "bookdown": {
+      "Package": "bookdown",
+      "Version": "0.24",
+      "Source": "Repository"
+    },
+    "cli": {
+      "Package": "cli",
+      "Version": "3.1.0",
+      "Source": "Repository"
+    },
+    "clipr": {
+      "Package": "clipr",
+      "Version": "0.7.1",
+      "Source": "Repository"
+    },
+    "cluster": {
+      "Package": "cluster",
+      "Version": "2.1.2",
+      "Source": "Repository"
+    },
+    "clustermq": {
+      "Package": "clustermq",
+      "Version": "0.8.95.2",
+      "Source": "Repository"
+    },
+    "config": {
+      "Package": "config",
+      "Version": "0.3.1",
+      "Source": "Repository"
+    },
+    "curl": {
+      "Package": "curl",
+      "Version": "4.3.2",
+      "Source": "Repository"
+    },
+    "data.table": {
+      "Package": "data.table",
+      "Version": "1.14.2",
+      "Source": "Repository"
+    },
+    "dbplyr": {
+      "Package": "dbplyr",
+      "Version": "2.1.1",
+      "Source": "Repository"
+    },
+    "dendextend": {
+      "Package": "dendextend",
+      "Version": "1.15.2",
+      "Source": "Repository"
+    },
+    "devtools": {
+      "Package": "devtools",
+      "Version": "2.4.2",
+      "Source": "Repository"
+    },
+    "dtwclust": {
+      "Package": "dtwclust",
+      "Version": "5.5.6",
+      "Source": "Repository"
+    },
+    "earth": {
+      "Package": "earth",
+      "Version": "5.3.1",
+      "Source": "Repository"
+    },
+    "fable": {
+      "Package": "fable",
+      "Version": "0.3.1",
+      "Source": "Repository"
+    },
+    "feasts": {
+      "Package": "feasts",
+      "Version": "0.2.2",
+      "Source": "Repository"
+    },
+    "furrr": {
+      "Package": "furrr",
+      "Version": "0.2.3",
+      "Source": "Repository"
+    },
+    "future": {
+      "Package": "future",
+      "Version": "1.23.0",
+      "Source": "Repository"
+    },
+    "future.apply": {
+      "Package": "future.apply",
+      "Version": "1.8.1",
+      "Source": "Repository"
+    },
+    "future.callr": {
+      "Package": "future.callr",
+      "Version": "0.7.0",
+      "Source": "Repository"
+    },
+    "getPass": {
+      "Package": "getPass",
+      "Version": "0.2-2",
+      "Source": "Repository"
+    },
+    "ggplot2": {
+      "Package": "ggplot2",
+      "Version": "3.3.5",
+      "Source": "Repository"
+    },
+    "glmnet": {
+      "Package": "glmnet",
+      "Version": "4.1-3",
+      "Source": "Repository"
+    },
+    "gt": {
+      "Package": "gt",
+      "Version": "0.3.1",
+      "Source": "Repository"
+    },
+    "here": {
+      "Package": "here",
+      "Version": "1.0.1",
+      "Source": "Repository"
+    },
+    "httr": {
+      "Package": "httr",
+      "Version": "1.4.2",
+      "Source": "Repository"
+    },
+    "janitor": {
+      "Package": "janitor",
+      "Version": "2.1.0",
+      "Source": "Repository"
+    },
+    "kernlab": {
+      "Package": "kernlab",
+      "Version": "0.9-29",
+      "Source": "Repository"
+    },
+    "kknn": {
+      "Package": "kknn",
+      "Version": "1.3.1",
+      "Source": "Repository"
+    },
+    "lattice": {
+      "Package": "lattice",
+      "Version": "0.20-45",
+      "Source": "Repository"
+    },
+    "lintr": {
+      "Package": "lintr",
+      "Version": "2.0.1",
+      "Source": "Repository"
+    },
+    "listviewer": {
+      "Package": "listviewer",
+      "Version": "3.0.0",
+      "Source": "Repository"
+    },
+    "microbenchmark": {
+      "Package": "microbenchmark",
+      "Version": "1.4.9",
+      "Source": "Repository"
+    },
+    "modeltime": {
+      "Package": "modeltime",
+      "Version": "1.1.0",
+      "Source": "Repository"
+    },
+    "packrat": {
+      "Package": "packrat",
+      "Version": "0.7.0",
+      "Source": "Repository"
+    },
+    "party": {
+      "Package": "party",
+      "Version": "1.3-9",
+      "Source": "Repository"
+    },
+    "partykit": {
+      "Package": "partykit",
+      "Version": "1.2-15",
+      "Source": "Repository"
+    },
+    "pkgdown": {
+      "Package": "pkgdown",
+      "Version": "1.6.1",
+      "Source": "Repository"
+    },
+    "plotly": {
+      "Package": "plotly",
+      "Version": "4.10.0",
+      "Source": "Repository"
+    },
+    "pool": {
+      "Package": "pool",
+      "Version": "0.1.6",
+      "Source": "Repository"
+    },
+    "profvis": {
+      "Package": "profvis",
+      "Version": "0.3.7",
+      "Source": "Repository"
+    },
+    "progressr": {
+      "Package": "progressr",
+      "Version": "0.9.0",
+      "Source": "Repository"
+    },
+    "prophet": {
+      "Package": "prophet",
+      "Version": "1.0",
+      "Source": "Repository"
+    },
+    "qcc": {
+      "Package": "qcc",
+      "Version": "2.7",
+      "Source": "Repository"
+    },
+    "qs": {
+      "Package": "qs",
+      "Version": "0.25.1.1",
+      "Source": "Repository"
+    },
+    "randomForest": {
+      "Package": "randomForest",
+      "Version": "4.6-14",
+      "Source": "Repository"
+    },
+    "ranger": {
+      "Package": "ranger",
+      "Version": "0.13.1",
+      "Source": "Repository"
+    },
+    "reactablefmtr": {
+      "Package": "reactablefmtr",
+      "Version": "1.0.0",
+      "Source": "Repository"
+    },
+    "renv": {
+      "Package": "renv",
+      "Version": "0.14.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "30e5eba91b67f7f4d75d31de14bbfbdc"
+    },
+    "reprex": {
+      "Package": "reprex",
+      "Version": "2.0.1",
+      "Source": "Repository"
+    },
+    "robfilter": {
+      "Package": "robfilter",
+      "Version": "4.1.2",
+      "Source": "Repository"
+    },
+    "rpart": {
+      "Package": "rpart",
+      "Version": "4.1-15",
+      "Source": "Repository"
+    },
+    "rsconnect": {
+      "Package": "rsconnect",
+      "Version": "0.8.25",
+      "Source": "Repository"
+    },
+    "rticles": {
+      "Package": "rticles",
+      "Version": "0.21",
+      "Source": "Repository"
+    },
+    "rules": {
+      "Package": "rules",
+      "Version": "0.1.2",
+      "Source": "Repository"
+    },
+    "skimr": {
+      "Package": "skimr",
+      "Version": "2.1.3",
+      "Source": "Repository"
+    },
+    "slider": {
+      "Package": "slider",
+      "Version": "0.2.2",
+      "Source": "Repository"
+    },
+    "strucchange": {
+      "Package": "strucchange",
+      "Version": "1.5-2",
+      "Source": "Repository"
+    },
+    "targets": {
+      "Package": "targets",
+      "Version": "0.8.1",
+      "Source": "Repository"
+    },
+    "testthat": {
+      "Package": "testthat",
+      "Version": "3.1.0",
+      "Source": "Repository"
+    },
+    "tidymodels": {
+      "Package": "tidymodels",
+      "Version": "0.1.4",
+      "Source": "Repository"
+    },
+    "tidyverse": {
+      "Package": "tidyverse",
+      "Version": "1.3.1",
+      "Source": "Repository"
+    },
+    "timetk": {
+      "Package": "timetk",
+      "Version": "2.6.2",
+      "Source": "Repository"
+    },
+    "timevis": {
+      "Package": "timevis",
+      "Version": "1.0.0",
+      "Source": "Repository"
+    },
+    "tsfeatures": {
+      "Package": "tsfeatures",
+      "Version": "1.0.2",
+      "Source": "Repository"
+    },
+    "tsibble": {
+      "Package": "tsibble",
+      "Version": "1.1.0",
+      "Source": "Repository"
+    },
+    "tsmp": {
+      "Package": "tsmp",
+      "Version": "0.4.14",
+      "Source": "Repository"
+    },
+    "txtplot": {
+      "Package": "txtplot",
+      "Version": "1.0-4",
+      "Source": "Repository"
+    },
+    "xaringan": {
+      "Package": "xaringan",
+      "Version": "0.22",
+      "Source": "Repository"
+    },
+    "xgboost": {
+      "Package": "xgboost",
+      "Version": "1.5.0.2",
+      "Source": "Repository"
+    },
+    "zeallot": {
+      "Package": "zeallot",
+      "Version": "0.1.0",
+      "Source": "Repository"
+    }
+  }
+}
