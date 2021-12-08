@@ -22,6 +22,10 @@ COPY renv.lock renv.lock
 RUN Rscript -e 'renv::restore()'
 WORKDIR /
 
+RUN apt-get update && apt-get install -y --no-install-recommends \
+  python3-pip \
+  && pip install -U radian
+
 EXPOSE 8787
 EXPOSE 3838
 
