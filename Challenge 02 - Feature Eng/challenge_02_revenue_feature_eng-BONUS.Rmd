@@ -191,7 +191,7 @@ std_sd   <- standardize_params$std_sd
 ```
 
 
-We'll use these parameters to create our "full dataset". We've select an 8-week forecast horizon. Our lag period is 8 weeks and we'll try out a few rolling averages at various aggregations. 
+We'll use these parameters to create our "full dataset". We've selecte an 8-week forecast horizon. Our lag period is 8 weeks and we'll try out a few rolling averages at various aggregations. 
 
 ```{r}
 horizon         <- 8
@@ -314,7 +314,6 @@ forecast_tbl      <- read_rds("challenge_02_data_checkpoints/forecast_tbl.rds")
 ```{r}
 splits <- data_prepared_tbl %>% 
     time_series_split(assess = horizon, cumulative = TRUE)
-splits
 ```
 
 
@@ -359,7 +358,7 @@ recipe_spec_base <- recipe(revenue ~ ., data = training(splits)) %>%
     # Fourier - 4 Week ACF
     step_fourier(purchased_at, period = c(4, 52/2, 52), K = 2)
 
-recipe_spec_base %>% prep() %>% juice() %>% glimpse(80)
+recipe_spec_base %>% prep() %>% juice() %>% glimpse()
 ```
 
 
@@ -502,7 +501,7 @@ Start by making a modeltime table:
 model_tbl <- modeltime_table(
     workflow_fit_lm_1_spline,
     workflow_fit_lm_2_lag
-) 
+)
 
 model_tbl
 ```
@@ -513,6 +512,7 @@ As a precautionary measure, please refit the models using `modeltime_refit()`. T
 # Refitting makes sure your models work over time. 
 model_tbl <- model_tbl %>%
     modeltime_refit(training(splits))
+model_tbl
 ```
 
 ### Calibrate the Table
@@ -578,6 +578,7 @@ calibration_tbl <- read_rds("challenge_02_data_checkpoints/calibration_tbl.rds")
 ```{r}
 refit_tbl <- calibration_tbl %>%
     modeltime_refit(data = data_prepared_tbl)
+refit_tbl
 ```
 
 
@@ -626,4 +627,58 @@ refit_tbl %>%
 
 - What do we think of these forecasts?
 - How can we further improve them? (HINT: what have competitors used that we haven't?)
+
+
+# BONUS
+
+## GLMNet - Elastic Net 
+
+```{r}
+workflow_fit_glmnet_2_lag <- workflow_fit_lm_2_lag %>%
+    update_model(
+        spec = linear_reg(penalty = 0.1, mixture = 0.5) %>%
+            set_engine("glmnet")
+    ) %>%
+    fit(training(splits))
+```
+
+```{r}
+calibration_tbl <- modeltime_table(
+    workflow_fit_lm_1_spline,
+    workflow_fit_lm_2_lag,
+    workflow_fit_glmnet_2_lag
+) %>%
+    update_model_description(.model_id = 1, "LM - Spline Recipe") %>%
+    update_model_description(2, "LM - Lag Recipe") %>%
+    update_model_description(3, "GLMNET - Lag Recipe") %>%
+    modeltime_refit(training(splits)) %>% 
+    modeltime_calibrate(testing(splits))
+```
+
+```{r}
+calibration_tbl %>% modeltime_accuracy()
+```
+
+```{r}
+calibration_tbl %>%
+    modeltime_forecast(
+        new_data = testing(splits),
+        actual_data = data_prepared_tbl
+    ) %>%
+    plot_modeltime_forecast()
+```
+
+```{r}
+refit_tbl <- calibration_tbl %>%
+    modeltime_refit(data = data_prepared_tbl)
+```
+
+```{r}
+refit_tbl %>%
+    modeltime_forecast(
+        new_data = forecast_tbl,
+        actual_data = data_prepared_tbl
+    ) %>%
+    plot_modeltime_forecast()
+```
 

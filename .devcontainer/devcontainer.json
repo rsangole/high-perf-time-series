@@ -1,0 +1,22 @@
+{
+    "name": "High Perf Time Series",
+    "image": "hatmatrix/ds4b_highperfts:latest",
+    "settings": {
+        "terminal.integrated.automationShell.linux": "/bin/bash"
+    },
+    "extensions": [
+		"antfu.icons-carbon",
+		"ms-azuretools.vscode-docker",
+		"mhutchie.git-graph",
+		"eamodio.gitlens",
+		"ecmel.vscode-html-css",
+		"yzhang.markdown-all-in-one",
+		"ms-ossdata.vscode-postgresql",
+		"ikuyadeu.r",
+		"rdebugger.r-debugger",
+		"mtxr.sqltools",
+		"vscodevim.vim",
+		"tomoki1207.pdf"
+	],
+    "postCreateCommand": "radian"
+}
